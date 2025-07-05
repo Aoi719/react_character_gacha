@@ -1,7 +1,9 @@
-@import url(../../assets/variables.css);
-
 .pageWrapper {
   background-color: var(--background);
-  max-width: 1280px;
-  margin: 0 auto;
+  min-height: 100svh;
+  .pageWrapperInner {
+    padding: 24px 20px;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
 }

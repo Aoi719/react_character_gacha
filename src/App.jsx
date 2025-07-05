@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import './style.css'
 import Home from './pages/Home'
 import Gacha from './pages/Gacha'
 import Result from './pages/Result'

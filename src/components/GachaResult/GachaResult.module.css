@@ -1,0 +1,7 @@
+.result {
+  text-align: center;
+  .resultImage {
+    max-width: 450px;
+    margin-inline: auto;
+  }
+}

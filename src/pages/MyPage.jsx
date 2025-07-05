@@ -1,27 +1,22 @@
 import { Link } from "react-router-dom"
 import { ROUTES } from "../const"
 import PageWrapper from "../components/PageWrapper/PageWrapper"
+import CharacterList from "../components/CharacterList/CharacterList"
+import PrimaryHeading from "../components/Heading/PrimaryHeading"
 
 export default function MyPage({ ownedCharacters }) {
   return (
     <PageWrapper>
-      <h2>所持キャラクター一覧</h2>
+      <PrimaryHeading>所持キャラクター一覧</PrimaryHeading>
       {
         ownedCharacters.length === 0 ? (
           <p>まだキャラを持っていません。</p>
         ) : (
-          <ul>
-            {ownedCharacters.map((chara, index) => (
-              <li key={`chara-${index}`}>
-                <strong>{chara.name}</strong><br />
-                （レアリティ：{chara.rarity} / 属性；{chara.type}）
-              </li>
-            )
-            )}
-          </ul>
+          <CharacterList ownedCharacters={ownedCharacters} />
         )
       }
       <Link to={ROUTES.HOME}>HOMEへ戻る</Link>
     </PageWrapper>
   )
 }
+

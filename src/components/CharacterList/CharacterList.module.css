@@ -1,0 +1,45 @@
+.characterList {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  > .characterItem {
+    padding: 20px;
+    border-radius: 8px;
+    .characterImage {
+      max-width: 200px;
+      margin-inline: auto;
+    }
+    .characterInfo {
+      margin-top: 16px;
+    }
+    .characterName {
+      margin-top: 0;
+      margin-bottom: 16px;
+      font-size: 28px;
+    }
+    .characterRarity {
+      margin-bottom: 0;
+      font-size: 14px;
+    }
+    .characterType {
+      margin: 0;
+      font-size: 14px;
+    }
+    .characterDesc {
+      margin-bottom: 0;
+    }
+    &.rarity-N {
+      background: var(--n);
+    }
+    &.rarity-R {
+      background: var(--r);
+    }
+    &.rarity-SR {
+      background: var(--sr);
+    }
+    &.rarity-SSR {
+      background: var(--ssr);
+    }
+  }
+}

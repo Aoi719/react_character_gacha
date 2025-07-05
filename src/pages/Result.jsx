@@ -1,6 +1,8 @@
 import { Link, useLocation } from "react-router-dom"
 import { ROUTES } from "../const"
 import PageWrapper from "../components/PageWrapper/PageWrapper"
+import GachaResult from "../components/GachaResult/GachaResult";
+import PrimaryHeading from "../components/Heading/PrimaryHeading";
 
 export default function Result() {
   const location = useLocation();
@@ -17,17 +19,11 @@ export default function Result() {
 
   return (
     <PageWrapper>
-      <h2>ガチャ結果</h2>
-      <div>
-        <h3>{character.name}</h3>
-        <p>レアリティ：{character.rarity}</p>
-        <p>属性：{character.type}</p>
-        <p>{character.description}</p>
-      </div>
+      <PrimaryHeading>ガチャ結果</PrimaryHeading>
+      <GachaResult character={character} />
       <Link to={ROUTES.GACHA}>もう一度引く</Link>
       <br />
       <Link to={ROUTES.MYPAGE}>マイページへ</Link>
     </PageWrapper>
   )
 }
-
