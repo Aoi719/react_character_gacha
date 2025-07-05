@@ -1,7 +1,8 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ROUTES } from "../const";
-import PageWrapper from "../components/PageWrapper/PageWrapper";
 import characters from "../data/character";
+import styles from "./Gacha.module.css"
+import Button from "../components/Button/Button";
 
 export default function Gacha({ ownedCharacters, setOwnedCharacters }) {
   const navigate = useNavigate();
@@ -19,11 +20,13 @@ export default function Gacha({ ownedCharacters, setOwnedCharacters }) {
   }
 
   return (
-    <PageWrapper>
-      <div>Gacha</div>
-      <button onClick={handleGacha}>ガチャる！</button>
-    </PageWrapper>
+    <>
+      <div className={styles.gachaSection}>
+        <h2>キャラ召喚</h2>
+        <p className={styles.gachaHint}>SSR 2% / SR 10% / R 28% / N 60%</p>
+        <Button variant="gacha" onClick={handleGacha}>ガチャる！</Button>
+        <Link to={ROUTES.HOME} className={styles.link}>HOMEへ戻る</Link>
+      </div>
+    </>
   )
 }
-
-

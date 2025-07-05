@@ -7,7 +7,10 @@
   color: #000;
   text-decoration: none;
   border-radius: 4px;
+  cursor: pointer;
+  border: none;
 }
+
 .variant-default {
   background-color: var(--primary);
 }
@@ -19,4 +22,27 @@
 }
 .variant-danger:hover {
   background-color: var(--danger-hover);
+}
+
+.variant-gacha {
+  background-color: #ffd700;
+  color: black;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ffd700aa;
+  transition: transform 0.3s;
+}
+.variant-gacha:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    font-size: 14px;
+    font-size: clamp(12px, 3.636vw, 14px);
+  }
 }

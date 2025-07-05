@@ -1,5 +1,6 @@
 .result {
   text-align: center;
+  margin-bottom: 60px;
   .resultImage {
     max-width: 450px;
     margin-inline: auto;

@@ -1,0 +1,23 @@
+.gachaSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url("/assets/images/gacha-bg.jpg") no-repeat center;
+  background-size: cover;
+  color: #000;
+  width: 100%;
+  height: 100vh;
+}
+
+.link {
+  background: var(--background);
+  color: var(--text);
+  text-decoration: none;
+  margin-top: 48px;
+  padding: 4px;
+  border-radius: 4px;
+  &:hover {
+    text-decoration: underline;
+  }
+}

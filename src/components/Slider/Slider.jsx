@@ -19,14 +19,20 @@ export default function Slider() {
 
   return (
     <Swiper
-      spaceBetween={30}
-      slidesPerView={3}
+      spaceBetween={20}
+      slidesPerView={2}
       loop={true}
       loopedSlides={10}
       autoplay={{
         delay: 3000,
         disableOnInteraction: false,
         pauseOnMouseEnter: true,
+      }}
+      breakpoints={{
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
       }}
       modules={[Autoplay]}
       onSwiper={(swiper) => {

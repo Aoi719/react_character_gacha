@@ -3,6 +3,8 @@ import { ROUTES } from "../const"
 import PageWrapper from "../components/PageWrapper/PageWrapper"
 import GachaResult from "../components/GachaResult/GachaResult";
 import PrimaryHeading from "../components/Heading/PrimaryHeading";
+import Button from "../components/Button/Button";
+import ButtonList from "../components/Button/ButtonList";
 
 export default function Result() {
   const location = useLocation();
@@ -21,9 +23,10 @@ export default function Result() {
     <PageWrapper>
       <PrimaryHeading>ガチャ結果</PrimaryHeading>
       <GachaResult character={character} />
-      <Link to={ROUTES.GACHA}>もう一度引く</Link>
-      <br />
-      <Link to={ROUTES.MYPAGE}>マイページへ</Link>
+      <ButtonList>
+        <Button to={ROUTES.GACHA} variant="danger">もう一度ガチャる！</Button>
+        <Button to={ROUTES.MYPAGE}>マイページへ</Button>
+      </ButtonList>
     </PageWrapper>
   )
 }
