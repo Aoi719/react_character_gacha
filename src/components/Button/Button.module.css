@@ -1,0 +1,22 @@
+.buttonWrapper {
+  display: flex;
+}
+.button {
+  padding: 12px;
+  transition: background-color 0.3s;
+  color: #000;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.variant-default {
+  background-color: var(--primary);
+}
+.variant-default:hover {
+  background-color: var(--primary-hover);
+}
+.variant-danger {
+  background-color: var(--danger);
+}
+.variant-danger:hover {
+  background-color: var(--danger-hover);
+}

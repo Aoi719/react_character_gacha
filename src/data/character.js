@@ -5,7 +5,7 @@ const character = [
     type: "火",
     rarity: "SR",
     description: "烈火の剣士。荒ぶる火炎で敵を焼き尽くす。",
-    image: "./assets/images/ares_sr.png",
+    image: "/assets/images/ares_01.jpeg",
     stats: {
       attack: 110,
       defense: 80,
@@ -18,7 +18,7 @@ const character = [
     type: "水",
     rarity: "SSR",
     description: "海の巫女。癒しと破壊をあわせ持つ神秘的な存在。",
-    image: "./assets/images/selena_ssr.png",
+    image: "/assets/images/selena_02.jpeg",
     stats: {
       attack: 100,
       defense: 95,
@@ -31,7 +31,7 @@ const character = [
     type: "風",
     rarity: "R",
     description: "空を駆ける魔導士。スピードを活かした連撃が得意。",
-    image: "./assets/images/sechs_r.png",
+    image: "/assets/images/sechs_03.jpeg",
     stats: {
       attack: 75,
       defense: 60,
@@ -44,7 +44,7 @@ const character = [
     type: "土",
     rarity: "N",
     description: "古代遺跡から発掘された自動戦闘兵器。無口で頑丈。",
-    image: "./assets/images/ares_sr.png",
+    image: "/assets/images/golemMk-II_04.jpeg",
     stats: {
       attack: 65,
       defense: 130,
@@ -57,7 +57,7 @@ const character = [
     type: "音",
     rarity: "SR",
     description: "音楽で味方を鼓舞し、敵を幻惑する吟遊詩人。",
-    image: "./assets/images/ares_sr.png",
+    image: "/assets/images/mystia_05.jpeg",
     stats: {
       attack: 70,
       defense: 85,
@@ -70,7 +70,7 @@ const character = [
     type: "光",
     rarity: "SSR",
     description: "聖なる力を操る女神の化身。全てを浄化する光を放つ。",
-    image: "./assets/images/ares_sr.png",
+    image: "/assets/images/lumiere_06.jpeg",
     stats: {
       attack: 120,
       defense: 90,
@@ -83,7 +83,7 @@ const character = [
     type: "闇",
     rarity: "SR",
     description: "影の中に潜む忍者。素早い攻撃と暗殺が得意。",
-    image: "./assets/images/ares_sr.png",
+    image: "/assets/images/kagemaru_07.jpeg",
     stats: {
       attack: 95,
       defense: 60,
@@ -96,7 +96,7 @@ const character = [
     type: "土",
     rarity: "R",
     description: "大地を揺るがす巨体の戦士。防御力に長ける。",
-    image: "./assets/images/ares_sr.png",
+    image: "/assets/images/Virgo_08.jpeg",
     stats: {
       attack: 80,
       defense: 120,
@@ -109,7 +109,7 @@ const character = [
     type: "風",
     rarity: "N",
     description: "軽やかに舞う弓使い。攻撃力は低いが回避性能が高い。",
-    image: "./assets/images/ares_sr.png",
+    image: "/assets/images/fiona_09.jpeg",
     stats: {
       attack: 50,
       defense: 40,
@@ -122,7 +122,7 @@ const character = [
     type: "火",
     rarity: "SSR",
     description: "古の炎竜の魂を宿す戦士。一撃必殺の炎を操る。",
-    image: "./assets/images/ares_sr.png",
+    image: "/assets/images/ignite_10.jpeg",
     stats: {
       attack: 150,
       defense: 70,
