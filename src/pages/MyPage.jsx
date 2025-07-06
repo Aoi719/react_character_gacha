@@ -19,7 +19,7 @@ export default function MyPage({ ownedCharacters }) {
         )
       }
       <ButtonList>
-        <Button to={ROUTES.GACHA} variant="danger">もう一度ガチャる！</Button>
+        <Button to={ROUTES.GACHA} variant="danger">遊んでみる</Button>
         <Button to={ROUTES.HOME}>HOMEへ戻る</Button>
       </ButtonList>
     </PageWrapper>

@@ -3,6 +3,7 @@ import { ROUTES } from "../const";
 import characters from "../data/character";
 import styles from "./Gacha.module.css"
 import Button from "../components/Button/Button";
+import PrimaryHeading from "../components/Heading/PrimaryHeading";
 
 export default function Gacha({ ownedCharacters, setOwnedCharacters }) {
   const navigate = useNavigate();
@@ -22,8 +23,8 @@ export default function Gacha({ ownedCharacters, setOwnedCharacters }) {
   return (
     <>
       <div className={styles.gachaSection}>
-        <h2>キャラ召喚</h2>
-        <p className={styles.gachaHint}>SSR 2% / SR 10% / R 28% / N 60%</p>
+        <PrimaryHeading>キャラ召喚</PrimaryHeading>
+        <p className={styles.gachaHint}>当選確率<br />SSR 2% / SR 10% / R 28% / N 60%</p>
         <Button variant="gacha" onClick={handleGacha}>ガチャる！</Button>
         <Link to={ROUTES.HOME} className={styles.link}>HOMEへ戻る</Link>
       </div>

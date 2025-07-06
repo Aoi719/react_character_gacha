@@ -10,6 +10,11 @@
   height: 100vh;
 }
 
+.gachaHint {
+  text-align: center;
+  margin: 40px 0;
+}
+
 .link {
   background: var(--background);
   color: var(--text);
