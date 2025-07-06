@@ -24,7 +24,7 @@ export default function Home() {
       <h1 className={`${styles.h1} ${showHeading ? styles.display : ""}`} id="homeHeading">
         <img src="logo.svg" alt="エレメンティア" />
       </h1>
-      <p className={`${styles.text} ${showElemenets ? styles.display : styles.hidden}`}>属性×レアリティで引き当てるキャラガチャゲーム！<br />あなたの運命のキャラを手に入れよう。</p>
+      <p className={`${styles.text} ${showElemenets ? styles.display : styles.hidden}`}><span className="d-ib">属性×レアリティで引き当てる</span><span className="d-ib">キャラガチャゲーム！</span><br />あなたの運命のキャラを手に入れよう。</p>
       <div className={showElemenets ? styles.display : styles.hidden}>
         <div className={styles.imgSlider}>
           <Slider />
